@@ -1,0 +1,256 @@
+2022-2022-12 21:43 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:51] Starting AddressBookAppSpringBootApplication using Java 19.0.1 with PID 7100 (C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot\target\classes started by Administrator in C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot)
+2022-2022-12 21:43 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:630] No active profile set, falling back to 1 default profile: "default"
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.1\jaxb-impl-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/jaxb-core.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/angus-activation.jar
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.1\jaxb-core-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.activation-api.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.xml.bind-api.jar
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-2022-12 21:43 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-2022-12 21:43 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interfaces.
+2022-2022-12 21:43 [INFO][restartedMain][o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-2022-12 21:43 [INFO][restartedMain][o.s.w.s.a.s.AnnotationActionEndpointMapping:239] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:114] Tomcat initialized with port(s): 8081 (http)
+2022-2022-12 21:43 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-2022-12 21:43 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-2022-12 21:43 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 5032 ms
+2022-2022-12 21:43 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-2022-12 21:43 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-2022-12 21:43 [WARN][restartedMain][o.h.o.deprecation:626] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-2022-12 21:43 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-2022-12 21:43 [ERROR][restartedMain][c.z.h.p.HikariPool:594] HikariPool-1 - Exception during pool initialization.
+java.sql.SQLSyntaxErrorException: Unknown database 'addressbook'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.addressbookappspringboot.AddressBookAppSpringBootApplication.main(AddressBookAppSpringBootApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-2022-12 21:43 [WARN][restartedMain][o.h.e.j.e.i.JdbcEnvironmentInitiator:239] HHH000342: Could not obtain connection to query metadata
+java.sql.SQLSyntaxErrorException: Unknown database 'addressbook'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:284)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:177)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.addressbookappspringboot.AddressBookAppSpringBootApplication.main(AddressBookAppSpringBootApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2022-2022-12 21:43 [ERROR][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:426] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-2022-12 21:43 [WARN][restartedMain][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2022-2022-12 21:43 [INFO][restartedMain][o.a.c.c.StandardService:173] Stopping service [Tomcat]
+2022-2022-12 21:43 [INFO][restartedMain][o.s.b.a.l.ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2022-2022-12 21:43 [ERROR][restartedMain][o.s.b.SpringApplication:820] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
+	at com.example.addressbookappspringboot.AddressBookAppSpringBootApplication.main(AddressBookAppSpringBootApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:267)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:230)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:44)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:218)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:191)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:138)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1350)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1421)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747)
+	... 19 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'javax.persistence.jdbc.url', 'hibernate.connection.url', or 'hibernate.dialect')
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:147)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:60)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:244)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:36)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:255)
+	... 34 common frames omitted
+2022-2022-12 21:49 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:51] Starting AddressBookAppSpringBootApplication using Java 19.0.1 with PID 1320 (C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot\target\classes started by Administrator in C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot)
+2022-2022-12 21:49 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:630] No active profile set, falling back to 1 default profile: "default"
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.1\jaxb-impl-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/jaxb-core.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/angus-activation.jar
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.1\jaxb-core-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.activation-api.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.xml.bind-api.jar
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-2022-12 21:49 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-2022-12 21:49 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+2022-2022-12 21:49 [INFO][restartedMain][o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-2022-12 21:49 [INFO][restartedMain][o.s.w.s.a.s.AnnotationActionEndpointMapping:239] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:114] Tomcat initialized with port(s): 8081 (http)
+2022-2022-12 21:49 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-2022-12 21:49 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-2022-12 21:49 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 3161 ms
+2022-2022-12 21:49 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-2022-12 21:49 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-2022-12 21:49 [WARN][restartedMain][o.h.o.deprecation:626] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-2022-12 21:49 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-2022-12 21:49 [INFO][restartedMain][c.z.h.p.HikariPool:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7edd5d45
+2022-2022-12 21:49 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-2022-12 21:49 [INFO][restartedMain][SQL dialect:66] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-2022-12 21:49 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-2022-12 21:49 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-2022-12 21:49 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:227] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-12 21:49 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:101] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-2022-12 21:49 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:226] Tomcat started on port(s): 8081 (http) with context path ''
+2022-2022-12 21:49 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:57] Started AddressBookAppSpringBootApplication in 8.587 seconds (process running for 10.335)
+2022-2022-12 21:58 [INFO][http-nio-8081-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-2022-12 21:58 [INFO][http-nio-8081-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-2022-12 21:58 [INFO][http-nio-8081-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 2 ms
+2022-2022-12 21:58 [WARN][http-nio-8081-exec-2][o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.addressbookappspringboot.DTO.ResponseDTO> com.example.addressbookappspringboot.Controller.AddressBookController.CreateEmployeePayroll(com.example.addressbookappspringboot.DTO.ContactDTO): [Field error in object 'contactDTO' on field 'zip': rejected value [422605]; codes [Pattern.contactDTO.zip,Pattern.zip,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.zip,zip]; arguments []; default message [zip],[Ljakarta.validation.constraints.Pattern$Flag;@198352b5,^[0-9]{5}(?:-[0-9]{4})?$]; default message [must match "^[0-9]{5}(?:-[0-9]{4})?$"]] ]
+2022-2022-12 21:58 [WARN][http-nio-8081-exec-4][o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.addressbookappspringboot.DTO.ResponseDTO> com.example.addressbookappspringboot.Controller.AddressBookController.CreateEmployeePayroll(com.example.addressbookappspringboot.DTO.ContactDTO): [Field error in object 'contactDTO' on field 'zip': rejected value [422605]; codes [Pattern.contactDTO.zip,Pattern.zip,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.zip,zip]; arguments []; default message [zip],[Ljakarta.validation.constraints.Pattern$Flag;@198352b5,^[0-9]{5}(?:-[0-9]{4})?$]; default message [must match "^[0-9]{5}(?:-[0-9]{4})?$"]] ]
+2022-2022-12 22:00 [WARN][http-nio-8081-exec-6][o.s.w.s.m.s.DefaultHandlerExceptionResolver:207] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.addressbookappspringboot.DTO.ResponseDTO> com.example.addressbookappspringboot.Controller.AddressBookController.CreateEmployeePayroll(com.example.addressbookappspringboot.DTO.ContactDTO) with 4 errors: [Field error in object 'contactDTO' on field 'phone': rejected value [null]; codes [NotBlank.contactDTO.phone,NotBlank.phone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.phone,phone]; arguments []; default message [phone]]; default message [please enter proper mobile number]] [Field error in object 'contactDTO' on field 'city': rejected value [null]; codes [NotBlank.contactDTO.city,NotBlank.city,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.city,city]; arguments []; default message [city]]; default message [city cannot be empty]] [Field error in object 'contactDTO' on field 'address': rejected value [null]; codes [NotBlank.contactDTO.address,NotBlank.address,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.address,address]; arguments []; default message [address]]; default message [address cannot be empty]] [Field error in object 'contactDTO' on field 'state': rejected value [null]; codes [NotBlank.contactDTO.state,NotBlank.state,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [contactDTO.state,state]; arguments []; default message [state]]; default message [state cannot be empty]] ]
+2022-2022-12 22:11 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-2022-12 22:11 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-2022-12 22:11 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-2022-12 22:12 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:51] Starting AddressBookAppSpringBootApplication using Java 19.0.1 with PID 11144 (C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot\target\classes started by Administrator in C:\Users\Administrator\Desktop\AddressBookAppSB\AddressBookAppSpringBoot)
+2022-2022-12 22:12 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:630] No active profile set, falling back to 1 default profile: "default"
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-impl\4.0.1\jaxb-impl-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/jaxb-core.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.1/angus-activation.jar
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.d.r.ChangeableUrls:250] The Class-Path manifest attribute in C:\Users\Administrator\.m2\repository\com\sun\xml\bind\jaxb-core\4.0.1\jaxb-core-4.0.1.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.activation-api.jar,file:/C:/Users/Administrator/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.1/jakarta.xml.bind-api.jar
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-2022-12 22:12 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-2022-12 22:12 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:208] Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2022-2022-12 22:12 [INFO][restartedMain][o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:409] Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-2022-12 22:12 [INFO][restartedMain][o.s.w.s.a.s.AnnotationActionEndpointMapping:239] Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:114] Tomcat initialized with port(s): 8081 (http)
+2022-2022-12 22:12 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-2022-12 22:12 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.1]
+2022-2022-12 22:12 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:291] Root WebApplicationContext: initialization completed in 3039 ms
+2022-2022-12 22:12 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-2022-12 22:12 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 6.1.5.Final
+2022-2022-12 22:12 [WARN][restartedMain][o.h.o.deprecation:626] HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-2022-12 22:12 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-2022-12 22:12 [INFO][restartedMain][c.z.h.p.HikariPool:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19c11e45
+2022-2022-12 22:12 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-2022-12 22:12 [INFO][restartedMain][SQL dialect:66] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-2022-12 22:12 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-2022-12 22:12 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-2022-12 22:12 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:227] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-2022-12 22:12 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:101] Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-2022-12 22:12 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:226] Tomcat started on port(s): 8081 (http) with context path ''
+2022-2022-12 22:12 [INFO][restartedMain][c.e.a.AddressBookAppSpringBootApplication:57] Started AddressBookAppSpringBootApplication in 8.525 seconds (process running for 10.198)
+2022-2022-12 22:12 [INFO][http-nio-8081-exec-1][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-2022-12 22:12 [INFO][http-nio-8081-exec-1][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-2022-12 22:12 [INFO][http-nio-8081-exec-1][o.s.w.s.DispatcherServlet:547] Completed initialization in 7 ms
+2022-2022-12 22:16 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-2022-12 22:16 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-2022-12 22:16 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
