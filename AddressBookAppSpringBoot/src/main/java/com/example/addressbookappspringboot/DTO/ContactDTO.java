@@ -23,7 +23,7 @@ public class ContactDTO {
     private String city;
     @NotBlank(message = "state cannot be empty")
     private String state;
-    @Pattern(regexp= "^[0-9]{5}(?:-[0-9]{4})?$")
+    @Pattern(regexp= "^[0-9]{6}(?:-[0-9]{4})?$")
     private String zip;
     @NotBlank(message = "please enter proper mobile number")
     @Pattern(regexp ="^(91){1}[ ]+[0-9]{10}$")
