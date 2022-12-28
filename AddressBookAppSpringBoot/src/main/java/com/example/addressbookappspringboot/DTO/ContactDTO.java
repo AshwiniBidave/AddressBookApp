@@ -3,11 +3,10 @@ package com.example.addressbookappspringboot.DTO;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class ContactDTO {
@@ -23,7 +22,8 @@ public class ContactDTO {
     private String city;
     @NotBlank(message = "state cannot be empty")
     private String state;
-    @Pattern(regexp= "^[0-9]{5}(?:-[0-9]{4})?$")
+
+    @Pattern(regexp= "^[0-9]{6}(?:-[0-9]{4})?$")
     private String zip;
     @NotBlank(message = "please enter proper mobile number")
     @Pattern(regexp ="^(91){1}[ ]+[0-9]{10}$")

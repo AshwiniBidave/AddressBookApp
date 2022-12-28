@@ -4,10 +4,11 @@ import com.example.addressbookappspringboot.DTO.ContactDTO;
 import com.example.addressbookappspringboot.DTO.ResponseDTO;
 import com.example.addressbookappspringboot.Entity.Contact;
 import com.example.addressbookappspringboot.Service.AddressBookService;
+import com.example.addressbookappspringboot.Service.EmailSenderService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,6 +19,8 @@ import java.util.List;
 public class AddressBookController {
     @Autowired
     AddressBookService addressBookService;
+    @Autowired
+    EmailSenderService emailSenderService;
     @RequestMapping("/get")
     public ResponseEntity<ResponseDTO> getAllContact(){
         List<Contact> contactList=addressBookService.getContact();

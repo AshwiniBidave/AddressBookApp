@@ -1,19 +1,20 @@
 package com.example.addressbookappspringboot.Entity;
 
 import com.example.addressbookappspringboot.DTO.ContactDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
+import jakarta.persistence.*;
+import lombok.*;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDate;
 
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
+@Getter
+@Setter
+@ToString
+@EntityListeners(AuditingEntityListener.class)
 
 public class Contact {
     @Id
@@ -25,6 +26,8 @@ public class Contact {
     private String address;
     private String city;
     private String state;
+    private LocalDate creadteDate=LocalDate.now();
+    private LocalDate modifiedDate;
     private String zip;
     private String phone;
     private String email;
